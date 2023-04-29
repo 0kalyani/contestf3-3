@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+        #a1{
+            display: flex;
+        }
+
+        .x1{
+            border-bottom: 2px solid white;
+            border-top:none ;
+            border-left:none ;
+            border-right:none ;
+            width: 800px;
+            background-color: black;
+            margin-bottom: 20px;
+            margin-left: 40px;
+            color: white;
+        }
+        .s1{
+            margin-left: 40px;
+            width: 90px;
+            height: 30px;
+            text-align: center;
+        }
+
+        .input{
+            margin: 5px;
+            width: 400px;
+        }
+
+        #main{
+          margin: 200px;  
+        }
+        #next{
+            display: none;
+            /* visibility: hidden; */
+        }
+        
+        .d1{
+            margin-left:900px;
+        }
+        .e1{
+            margin-left: 10px;
+        }
+        header{
+            border-bottom: 2px solid white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+       <div id="a1"> <h1>Header</h1>
+        <span class="d1"> <h1>Signup</h1></span><span class="e1"><h1>Profile</h1></span>
+       </div>
+    </header>
+    <div id="main">
+        <h1 class="s1">Signup</h1>
+        <div class="input">        
+            <input class="x1" id="name" type="text" placeholder="Full Name">
+        </div>
+        <div class="input">
+            <input class="x1" id="email" type="email" placeholder="Email">
+        </div>
+        <div class="input">
+            <input class="x1" id="pass" type="password" placeholder="password">
+        </div>
+        <div>       
+             <input class="x1" type="password" placeholder="Confirm Pass">
+        </div>
+        <div class="input">
+            <Button id="a1" class="s1" onclick="myFunc()">Signup</Button>
+        </div>
+    </div>
+   
+    <div id="inn"></div>
+    <div id="next">
+        <h2 id="pro">Profile</h2>
+        <h2 >Full Name: <span id="fname"></span></h2>
+        <h2 >Email:<span id="mail"></span></h2>
+        <h2>Password:<span id="word"></span></h2>
+        <button onclick="func()" class="s1">Logout</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
